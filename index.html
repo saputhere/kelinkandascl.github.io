@@ -1,0 +1,376 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link href="css/Style.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vidyalaya</title>
+<link rel="shortcut icon" href="images/icon.png" type="png/ico">
+
+<!-- Latast Books -->
+<link rel="stylesheet" href="css/layout.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.pack.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.setup.js"></script>
+<!-- Latast Books -->
+<!-- Validate Plugin -->
+<script src="js/jquery.validate.min.js"></script> 
+
+<!-- Comments -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".CommentLink").click(function(){
+   //alert();
+ // $("#CommentLinkView").empty();
+	$( "#CommentLinkView" ).load( "Comment.php", function() {
+		 		//alert( "Load was performed." );
+   });
+  });
+});
+</script>
+
+<style type="text/css">
+
+    .btn-login{
+        background: linear-gradient(0deg, rgb(110, 1, 1) 0%, rgb(255, 123, 123) 35%, rgb(168, 0, 0) 100%);
+        width: auto;
+        height: 80%;
+        border-radius: 15px 0px;
+        float: left;
+        text-align: center;
+        border: 0ch;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+</style>
+
+</head>
+
+<body style="background-color:black;">
+<div id="Addstudio"> 
+  <div id="TopLineMain">
+
+<div id="ToplineCenter"> 
+  <div id="Topline"> 
+
+    <div id="SelectLanguage"><a href="#" class="SelectLanguage"> Sinhala </a> | <a href="#" class="SelectLanguage"> Tamil </a> | <a href="#" class="SelectLanguageSELECTED"> English </a> </div>
+    <div id="UserLogin">
+      <div id="LoginText"> Welcome </div>
+      <a href="#">
+      <div id="LogBut"> <button class="btn-login"  value="Login"> Login </button>  </div>
+      </a>
+      <div id="LoginText"> Or </div>
+      <a href="#">
+      <div id="LogBut"> <button class="btn-login"  value="signup"> Create Account </button> </div>
+      </a>
+    </div>
+  </div>
+</div>
+  </div>
+  <div id="MainHeader">
+<div id="HeaderCenter"> 
+  <div id="Header"> 
+    <a href="index.html">
+    <div id="MLogo"> </div>
+    </a> 
+    <!-- <div id="HRightMainDiv"> 
+        <div id="ShoppingCartIcon"> </div>
+        <div id="ShopingCartMianBackGround"> 
+          <div id="ShopingcartTitel"> Shopping Cart </div>
+          <div id="STextCounter"> 0 item(s) - Rs 0.00 </div>
+        </div>
+      </div>
+    </div> -->
+    <div id="MainSearch">
+      <form action="" method="post" enctype="multipart/form-data">
+        <input style="background-color: rgb(216, 216, 216);" name="" type="text" class="MainSearch" placeholder="Search ...." />
+        <input name="" type="submit" class="SearchIcon" value="" />
+      </form>
+    </div>
+  </div>
+  
+</div>
+  </div>
+  <div id="MainButtionSet">
+<div id="MainButtionSetCENTER"> 
+  <div id="MainButtionSet"> 
+    <ul class="menuul">
+      <li class="menuli"> <a href="#" class="MainButtionSetN">Home</a> </li>
+      <li class="menuli">
+        <div id="MainButionRihtLine"></div>
+      </li>
+      <li> <a href="#" class="MainButtionSetN">About Us</a> </li>
+       <ul style="margin-left:80px;">
+       <li> <a href="#" class="submenulink">Introduction</a></li>
+      </ul>
+      <li class="menuli">
+        <div id="MainButionRihtLine"></div>
+      </li>
+      <li> <a href="#" class="MainButtionSetV">Download </a>
+      </li>
+      <ul style="margin-left:180px;">
+      <li> <a href="#" class="submenulink">Textbooks Download</a></li>
+      </ul>
+      <li class="menuli">
+        <div id="MainButionRihtLine"></div>
+      <ul style="margin-left:280px;">
+      </ul>
+      <li class="menuli">
+        <div id="MainButionRihtLine"></div>
+      </li>    
+       <li class="menuli">
+        <div id="MainButionRihtLine"></div>
+      </li>           
+      <li> <a href="#" class="MainButtionSetN">Online Shopping </a>
+        <div id="MainButionRihtLine"></div>
+      </li>
+      <li class="menuli">
+        <div id="MainButionRihtLine"></div>
+      </li>
+      <li> <a href="#" class="MainButtionSetN">Gallery </a></li>           
+       <ul style="margin-left:435px;">
+       <li><a href="#" class="submenulink">Video</a></li>
+      </ul>
+      <li class="menuli">
+        <div id="MainButionRihtLine"></div>
+      </li>
+      <li> <a href="#" class="MainButtionSetN">Contact Us</a> </li>
+      <li class="menuli">
+        <div id="MainButionRihtLine"></div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+$(".menuul > li").click(function(){
+
+	if(false == $(this).next().is(':visible')) {
+		$('.menuul > ul').slideUp(300);
+	}
+	$(this).next("ul").slideToggle(300);
+});
+
+});
+
+</script> 
+  </div>
+  
+  <div id="SecondPartMain"> 
+    
+    <div id="SecondPartCenter"> 
+      
+      <div id="SecondPart"> 
+        <div id="FristTextBookSearch">
+          <form id="Validation" action="SelectSyllabuss.html"  method="post" enctype="multipart/form-data">
+            <div id="TExtBookSearchSelectionTitel"> Select Your Language Preference </div>
+            <div id="TextBookSearchSelection">
+              <select class="TextBookSearchSelection" name="BookLanguage" id="BookLanguage" >
+                <option selected="selected" value=""> Select Search  Books Language ............</option>
+                <option value="1"> English</option>
+                <option value="2"> Sinhala</option>
+                <option value="3"> Tamil</option>
+              </select>
+            </div>
+            <div id="ErDisplayselection" > &nbsp;
+              <div class="BookLanguageER"></div>
+            </div>
+            <div id="TExtBookSearchSelectionTitel">Select Grade </div>
+            <div id="TextBookSearchSelection">
+              <select name="BookGrade" class="TextBookSearchSelection" id="BookGrade" >
+                <option selected="selected" value=""> Select Search  Books Grade ............</option>
+                <option  value="1"> Grade 1</option>
+                <option  value="2"> Grade 2</option>
+                <option  value="3"> Grade 3</option>
+                <option  value="4"> Grade 4</option>
+                <option  value="5"> Grade 5</option>
+                <option  value="6"> Grade 6</option>
+                <option  value="7"> Grade 7</option>
+                <option  value="8"> Grade 8</option>
+                <option  value="9"> Grade 9</option>
+                <option  value="10"> Grade 10</option>
+                <option  value="11"> Grade 11</option>
+                 <option  value="17"> Grade 12/13</option>
+              </select>
+            </div>
+            <div id="ErDisplayselection"> &nbsp;
+              <div class="BookGradeER"></div>
+            </div>
+            <div id="TextbookSubmitButton">
+              <input type="submit" class="TextbookSubmitButton" value="NEXT" />
+            </div>
+          </form>
+        </div>
+        <div id="TextBookDownloadBottomDiscription"> The compatible reading software is Adobe Acrobat Reader version 5.0 or higher<br />
+          <a href="#" style="color:#b4b4b4"> Download  Acrobat Reader</a> </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="FooterMian">
+<div id="FooterCenter"> 
+  <div id="Footer"> 
+    <div id="SitemapMain"> 
+      <div id="SiteMapTitel"> Site Map </div>
+      <div id="SiteMapListMain"> 
+        <div id="SiteMapLink"> <a href="index.php" class="footerLink"> Home </a> </div>
+        <div id="SiteMapLink"> <a href="AboutUs.php" class="footerLink"> About Us </a> </div>
+        <div id="SiteMapLink"> <a href="BooksDownload.php" class="footerLink"> Books Download </a> </div>
+        <div id="SiteMapLink"> <a href="Gallery.php" class="footerLink"> Gallery </a> </div>
+        <div id="SiteMapLink"> <a href="ContactUs.php" class="footerLink"> Contact Us </a> </div>
+      </div>
+      
+      <div id="SiteMapListMain"> 
+                <div id="SiteMapLink"> <a href="OnlineShopping.php" class="footerLink"> Online Shopping </a> </div>
+        <div id="SiteMapLink"> <a target="_blank" href="Downloads/atireka poth.pdf" class="footerLink"> Supplementary Book List </a> </div>
+        <div id="SiteMapLink"> <a href="BookSalesPromotionCenters.php" class="footerLink"> Book Sales Promotion Centers </a> </div>
+        <div id="SiteMapLink"> <a href="#Comment" class="footerLink CommentLink"> Comment </a> </div>
+      </div>
+      
+      <div id="SiteMapListMain"> 
+        <div id="SiteMapLink"> <a href="#" class="footerLink"> Terms & Condition </a> </div>
+        <div id="SiteMapLink"> <a href="#" class="footerLink"> Privacy Policy </a> </div>
+        <div id="SiteMapLink"> <a href="#" class="footerLink"> Payment Method </a> </div>
+        <div id="SiteMapLink"> <a href="#" class="footerLink"> My Account </a> </div>
+      </div>
+  </div>
+</div>
+
+<div id="EndLineMain"> 
+  <div id="EndLineCenter"> 
+    <div id="EndLine"> 
+      <div id="Copyright"> Copyright © 2022 capital Madia Core (Pvt) Ltd. | All Rights Reserved. </div>
+      <div id="DesignDevolpBy"> Design and developed by <a href="www.cmc.com" style="color:#FFF;" target="_blank"> Capital Media Core </a> </div>
+    </div>
+  </div>
+</div>
+<div id="CommentLinkView"></div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+	$("#FooterInquary").validate({
+	
+		ignore: "input[type='text']:hidden",
+			
+			rules: {
+				  
+			FooterInName: {
+     				required: true,
+					minlength: 3,
+				},
+				
+			FooterInEmail: {
+					required: true,
+     		 		email: true,
+				},
+			
+			FooterInMessage: {
+						required: true,
+						minlength: 5,
+					
+				},
+				
+		},
+		messages: {
+
+				  },
+				  highlight: function(element) {
+				  $(element).addClass('error');
+				  $(element).closest('.control-group').removeClass('success').addClass('error');
+				 // $('#colloers').addClass('error');
+				
+		},
+		success: function(element) {
+			 element
+			 
+			.text('OK!').addClass('valid')
+			.closest('.control-group').removeClass('error').addClass('success');
+				
+		},/*
+		*/
+		
+		});
+	});
+
+</script>   </div>
+</div>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		
+	$("#Validation").validate({
+	
+		ignore: "input[type='text']:hidden",
+			
+			rules: {
+				  
+				BookLanguage: {
+					required: function(element) {
+						return $("#BookLanguage").val() == '';
+					required: true}
+					
+					},	
+				
+				BookGrade: {
+					required: function(element) {
+						return $("#BookGrade").val() == '';
+					required: true}
+					
+					},		
+		},
+			
+		errorPlacement: function (error, element) {
+			   
+					var type = $(element).attr("BookLanguage");
+					
+					if (element.attr("name") == "BookLanguage") {
+						// custom placement
+					   error.insertAfter(".BookLanguageER");
+					} 
+					
+					else if (element.attr("name") == "BookGrade"){
+						// custom placement
+						error.insertAfter(".BookGradeER");
+						
+						//$('#colloers1').addClass('error');
+					}
+					
+					else {
+						
+						error.insertAfter(element).wrap('<label/>');
+					}
+		},
+				
+		messages: {
+				
+				BookLanguage: "Please Select Books Language",
+				BookGrade: "Please Select Grade",
+				  },
+				  highlight: function(element) {
+				  $(element).addClass('error');
+				  $(element).closest('.control-group').removeClass('success').addClass('error');
+				 // $('#colloers').addClass('error');
+				
+		},
+		 
+		success: function(element) {
+			 element
+			 
+			.text('OK!').addClass('valid')
+			.closest('.control-group').removeClass('error').addClass('success');
+				
+		},/*
+		*/
+		
+		});
+	});
+
+
+</script> 
+
+</body>
+</html>
