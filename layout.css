@@ -1,0 +1,20 @@
+/*
+Template Name: Modular Business
+File: Layout CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+
+
+@import url(featured_slide.css);
+.col4 {
+	color: #FFF;
+ background-color:;
+	margin-top: 0px;
+}
+.col4 a {
+	color: #FFFFFF;
+background-color:;
+}
